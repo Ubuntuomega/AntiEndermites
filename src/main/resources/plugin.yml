@@ -1,0 +1,11 @@
+name: AntiEndermites
+version: '${project.version}'
+main: com.mineskopia.antiendermites.AntiEndermites
+api-version: 1.21.11
+authors: [ Ubuntuomega ]
+description: kill the endermites when an enderman targets them to break enderman-based exp farm.
+commands:
+  antiendermites:
+    description: "The main command of the plugin"
+    usage: "/antiendermites reload>"
+    permission: antiendermites.admin

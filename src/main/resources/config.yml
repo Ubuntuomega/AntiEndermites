@@ -1,0 +1,35 @@
+# Prints the location of the endermite in the console when it's removed
+log-enabled: true
+
+filter-worlds:
+  # If disabled, the plugin will work on all worlds
+  enabled: true
+
+  # If this filter is considered a blacklist or a whitelist. Allowed types:
+  # Blacklist: All worlds, except those specified, will be affected
+  # Whitelist: Only the specified worlds will be affected
+  type: whitelist
+  worlds:
+    - World_the_end
+
+# Special effects when the plugin removes an endermite
+effects:
+
+  particles:
+    # If particles are spawned at the location of the endermite
+    enabled: true
+
+    # The particle that will be used.
+    # List: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
+    # Warning! If the particle needs an extra DataType (Color, etc), will not work!
+    particle: POOF
+
+    # The particles that will be spawned. Must be at least 1.
+    count: 10
+
+  # If a sound is played at the location of the endermite
+  sound:
+    enabled: false
+    id: "minecraft:entity.generic.explode"
+    pitch: 1
+    volume: 1
